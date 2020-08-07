@@ -1,0 +1,44 @@
+.matrix-wrapper {
+  display: flex;
+
+  &-row {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-column {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 4px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background-color: lightgray;
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &-value {
+    color: #000000;
+
+    &.is-row {
+      color: yellow;
+    }
+
+    &.is-column {
+      color: green;
+    }
+
+    &.is-row-column {
+      color: blue;
+    }
+  }
+}

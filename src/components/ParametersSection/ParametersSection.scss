@@ -1,0 +1,35 @@
+.parameters-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &-row {
+    margin-bottom: 16px;
+    display: flex;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-label {
+    font-size: 16px;
+    display: flex;
+    margin-right: 16px;
+  }
+
+  &-button {
+    border-radius: 8px;
+    border: 1px solid green;
+    padding: 12px 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lightgreen;
+    }
+
+    &.is-disabled {
+      cursor: none;
+      background-color: darkseagreen;
+    }
+  }
+}
